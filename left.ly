@@ -74,7 +74,7 @@ left = \relative c'' {
   \repeat unfold 4 { ais,=,16 <gis' ais> q } |
   dis,=,8 <gis b>16\p\< q <b dis> q <dis gis> q <gis b> q <b dis> q\! |
   <dis,,=, dis,>8-> <dis fisis>16\p\< q <fisis ais> q <ais dis> q <dis fisis> q <fisis ais> q\! |
-  \time 9/8 <dis'=' dis,>16->-.\(_"Different rhythm with tuplets?" <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
+  \time 9/8 <dis'=' dis,>16->-.\( <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
 
 
   <gis=, gis,>16\) \clef "treble" <gis''=' bis> q \repeat unfold 3 { gis,= q q } |
@@ -95,7 +95,7 @@ left = \relative c'' {
 
   \key bes \major
   \cadenzaOn <ees,=, ees,>4. \small
-    \stemUp \once\override Beam.positions = #'(2 . 7) g32[-"adjust beam!!" bes d f \change Staff = "right" \stemDown g bes d f \change Staff = "left" \clef "treble" \stemUp g bes d]
+    \stemUp g32[ bes d f \change Staff = "right" \stemUp g bes d f \change Staff = "left" \clef "treble" \stemUp g bes d]
     \once\override Beam.positions = #'(7 . 2) f[ d bes g \change Staff = "right" \stemDown f d bes g \change Staff = "left" \clef "bass" \stemUp f d bes g bes]
     \cadenzaOff \partial 4. \once\override Beam.positions = #'(3.5 . 7) \tuplet 13/12 { d f \change Staff = "right" \stemDown g bes d f \change Staff = "left" \clef "treble" \stemUp g bes d f \change Staff = "right" \clef "treble^8" \stemDown g bes d } \change Staff = "left"  | \normalsize
   \stemNeutral s2. |
@@ -144,8 +144,8 @@ left = \relative c'' {
 
   dis,,=,16\( gis ais b cis dis cisis=16 gis' ais b cis dis\) |
   dis,=16\( gis ais b cis dis \clef "treble" cisis='16 gis' ais b cis dis\) |
-  dis,='16\( gis ais b cis dis cisis=''16 gis' ais b cis cisis |
-  s2.-"slur bend!!"\) |
+  dis,='16\shape #'((0 . 0) (0 . 2) (0 . -6) (0 . 0.7)) ^\( gis ais b cis dis cisis=''16 gis' ais b cis cisis |
+  \change Staff = "right" \hideNotes r2.\) \unHideNotes | \change Staff = "left"
 
   \time 9/8
 
@@ -169,7 +169,7 @@ left = \relative c'' {
   \repeat unfold 4 { ais,=,16 <gis' ais> q } |
   dis,=,8 <gis b>16\p\< q <b dis> q <dis gis> q <gis b> q <b dis> q\! |
   <dis,,=, dis,>8-> <dis fisis>16\p\< q <fisis ais> q <ais dis> q <dis fisis> q <fisis ais> q\! |
-  \time 9/8 <dis'=' dis,>16->-.\(_"Different rhythm with tuplets?" <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
+  \time 9/8 <dis'=' dis,>16->-.\( <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
 
 
   <gis=, gis,>16\) \clef "treble" <gis''=' bis> q \repeat unfold 3 { gis,= q q } |
@@ -201,8 +201,8 @@ left = \relative c'' {
 
   \cadenzaOn
   <ees,=, ees,>4. \small \tuplet 11/12 4. {
-    \stemUp \once\override Beam.positions = #'(4 . 5) g=,32[-"change beams!!" bes d f \change Staff = "right" \stemDown \ottava 0 g bes d f \change Staff = "left" \stemUp \clef "treble" g bes d]
-    \once\override Beam.positions = #'(6 . 5) f[ \change Staff = "right" \stemDown \clef "treble^8" g bes d f d bes g \change Staff = "left" \stemUp f d bes]
+    \stemUp g=,32[ bes d f \change Staff = "right" \stemUp \ottava 0 g bes d f \change Staff = "left" \stemUp \clef "treble" g bes d]
+    \once\override Beam.positions = #'(5.5 . 5) f[ \change Staff = "right" \stemDown \clef "treble^8" g bes d f d bes g \change Staff = "left" \stemUp f d bes]
     \cadenzaOff \partial 4. \once\override Beam.positions = #'(4.5 . 9) g bes d f \change Staff = "right" \stemDown g bes d f g bes d
   } | \change Staff = "left" \stemNeutral \normalsize
   r2. |

@@ -71,7 +71,7 @@ right = \relative c'' {
   \clef "treble"
   <ais,=' ais'>8.\( <gis gis'> <b b'> <ais ais'> |
   \appoggiatura { <b'='' b,>16 ais } <fis,=' fis'>8. <dis dis'> <ais' ais'> <fis fis'> |
-  <gis gis'>4.\) <fisis fisis'>8^"maybe no slur?"\( <gis gis'> <ais ais'> |
+  <gis gis'>4.\) <fisis fisis'>8\( <gis gis'> <ais ais'> |
   <b dis gis b>4. ~ q8. <cis cis'> |
   <ais dis fisis ais>2.\) |
   \time 9/8 <fisis ais dis fisis>4. r4. <dis'='' dis'>4.\( | \time 6/8

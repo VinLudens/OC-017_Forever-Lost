@@ -21,7 +21,7 @@ dynamics = {
   % allow text in the dynamics block to be centered vertically
   % \override TextScript.extra-offset = #'(0 . 1)
   \tempo Lento 4=52
-  s2.-"inconsistent font size with markup?"\ppdolce |
+  s2.\ppdolce |
   s4.\> s4.\! |
   s2.\pp |
   s4.\> s4.\! |
@@ -32,11 +32,13 @@ dynamics = {
   
   \tempo Andantino 4=80
   s2.\p | s2.*3 |
-  s4.-"!!check cursed whiteout!!"
-    \once\override Score.DynamicText.whiteout = ##t
-    % \once\override Score.DynamicText.layer = #-10
+    % whiteout not working ...
+    % \once\override Score.DynamicText.layer = #-1
+    % \once\override Score.BarLine.layer = #-2
+    % \once\override Score.DynamicText.whiteout = ##t
+  s4.%-"!!check cursed whiteout!!"
     s4.\crescPoco
-    \once\override Score.BarLine.whiteout = #9
+    % \once\override Score.BarLine.whiteout = #9
     |
   s2.*2 |
   s2.\cresc |
