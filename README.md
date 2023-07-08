@@ -6,4 +6,4 @@ No idea what the `Forever-Lost.cropped.*` files are. I kept them around because 
 
 # Recording
 
-- To be recorded
+- <https://youtu.be/u5nbnybHUWg>
